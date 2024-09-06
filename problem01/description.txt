@@ -1,0 +1,4 @@
+Samantha is going to the metal cube store to by some tungsten cubes. She is measuring the size of the cubes to try and find out how heavy they are.
+
+Given the side length of a tungsten cube, return the mass in kilograms of the cube, truncated (rounded down) to the nearest kilogram.
+(Use a density of 19.254 g/cm³ for tungsten)
