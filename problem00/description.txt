@@ -1,0 +1,3 @@
+Welcome to the first ever RHS Programming Competition! The hosts of the competition wish to welcome all participants by writing a program, instead of physically interacting with them.
+
+Given the name of a participant, return the string "Hello PARTICIPANT, welcome to the RHS Programming Competition!" where "PARTICIPANT" is replaced with the name of the participant.
