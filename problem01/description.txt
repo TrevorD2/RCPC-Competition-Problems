@@ -1,4 +1,19 @@
-Samantha is going to the metal cube store to by some tungsten cubes. She is measuring the size of the cubes to try and find out how heavy they are.
+Problem:
+Samantha is going to the metal cube store, as one does, to buy a tungsten cubes. 
+She wants to know the weight of the cubes, but can't pick them up due to her weak nerd arms.
+Instead, she measures the size of the cubes to try and find out how heavy they are.
 
 Given the side length of a tungsten cube, return the mass in kilograms of the cube, truncated (rounded down) to the nearest kilogram.
 (Use a density of 19.254 g/cm³ for tungsten)
+
+Input:
+
+side_length: integer
+
+Constraints:
+
+1 <= side_length <= 1000
+
+Output:
+
+mass: integer
