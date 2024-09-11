@@ -1,3 +1,4 @@
 .codesandbox
 .devcontainer
 .github
+__pycache__
