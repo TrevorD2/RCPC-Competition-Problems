@@ -1,0 +1,23 @@
+Name: Timmy's ABC's
+
+Difficulty: Easy
+
+Problem:
+Timmy has a hard time remembering his ABC’s, especially for the later letters.
+To help him remember all the letters, he wants to repeat some of them multiple times based on how far they are in the alphabet.
+
+Given a message, return the a new string with each letter repeated multiple times based on its position in the alphabet.
+Ex. A -> A, B -> BB, C -> CCC, etc.
+All non alphabetic characters should not be repeated.
+
+Input:
+message: string
+
+Constraints:
+0 <= message <= 100 chars
+
+Output:
+long_message: string
+
+Tags:
+String-Format

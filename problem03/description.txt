@@ -16,7 +16,7 @@ Input:
 time: integer
 
 Constraints:
-0 <= side_length <= 1439
+0 <= time <= 1439
 
 Output:
 clock_display: string
