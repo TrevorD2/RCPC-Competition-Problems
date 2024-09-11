@@ -7,9 +7,8 @@ def solution(time: int) -> str:
     if hours >= 13:
         hours -= 12
 
-    clock_display = f"----------\n|{str(hours).zfill(2)}:{str(minutes).zfill(2)} {am_pm}|\n----------"
+    return f"----------\n|{str(hours).zfill(2)}:{str(minutes).zfill(2)} {am_pm}|\n----------"
 
-    return clock_display
 
 from testcases import io_dict
 if __name__ == "__main__":
