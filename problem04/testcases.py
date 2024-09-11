@@ -1,3 +1,3 @@
-name: Little Caesars Pizza Encryption
+io_dict = {
 
-difficulty: Easy
+ }
