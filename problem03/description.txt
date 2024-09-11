@@ -9,7 +9,7 @@ Build Pablo a nice looking clock using the below format and the respective time 
 Make sure to include any leading zeros
 
 ----------
-|01:00 AM|
+|01:00 pm|
 ----------
 
 Input:

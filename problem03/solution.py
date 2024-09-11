@@ -12,9 +12,6 @@ def solution(time: int) -> str:
     return clock_display
 
 from testcases import io_dict
-import random
 if __name__ == "__main__":
-    for i in range(5):
-        inpt = random.randint(1, 1349)
-        io_dict[inpt] = solution(inpt)
-    print(io_dict)
+    for inpt in io_dict:
+        print(f"{inpt}\n{solution(inpt)}\n{solution(inpt) == io_dict[inpt]}\n")
