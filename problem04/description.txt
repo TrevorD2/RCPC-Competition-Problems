@@ -6,7 +6,7 @@ Problem:
 The pizza company Little Caesars has been facing a crisis! It seems that the pizza deliveries are constantly being robbed before the pizza gets to the desired location.
 In order to combat this threat, Little Caesars has decided to put locks on their pizza boxes that can only be unlocked withh a secret password. This password is sent to you online so that you can unlock the pizza. However, cyber criminals have been intercepting the passwords!
 To secure their pizza even further, Little Caesars has decided to encrypt their passwords. Instead of using the traditional Caesar Cipher (which is very insecure) Little Caesars invented a new Caesar Cipher.
-The Little Caesars Cipher © maps an input string of numbers 0-9 to a new sequence of numbers. Each number (i) in the string is multiplied by a constant (D) and then added to another constant (C). The resultant number becomes the encryped value corresponding to that input. If the number is greater than 9, the number wraps back around to 0 and continues.
+The Little Caesars Cipher © maps an input string of numbers 0-9 and the letter P to a new sequence. If the character is numerical, it is represented by its number; if the character is P, it is represented by the number 10. Each numerical representation in the string is multiplied by a constant (D) and then added to another constant (C). The resultant number becomes the encryped value corresponding to that input. If the number is greater than 10, the number wraps back around to 0 and continues.
 Given the values of D and C, decrypt the string of numbers in order to retrieve the password and unlock your pizza!
 
 Inputs:
@@ -15,9 +15,9 @@ C: int
 password: string
 
 Constraints:
-1 ≤ D ≤ 100
-0 ≤ C ≤ 100
-0 < pasword < 100 chars
+1 ≤ D ≤ 1000
+0 ≤ C ≤ 1000
+0 < pasword < 1000 chars
 The combination of (D, C) results in a valid one-to-one mapping
 
 Outputs:
