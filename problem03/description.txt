@@ -1,0 +1,24 @@
+Name: Pablo's New Clock
+
+Difficulty: Easy
+
+Problem:
+Pablo is trying to tell the time, but his clock only gives him the time in minutes since the day started
+Pablo decides he needs to build a new clock, but he doesn't know what he's doing.
+Build Pablo a nice looking clock using the below format and the respective time in minutes.
+
+----------
+|00:00 AM|
+----------
+
+Input:
+time: integer
+
+Constraints:
+0 <= side_length <= 1439
+
+Output:
+clock_display: string
+
+Tags:
+Math, String-Format
