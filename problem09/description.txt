@@ -1,0 +1,29 @@
+Name: The Imperial Recipe
+
+Difficulty: Medium
+
+Problem:
+
+1 ounce = 28.35 gram
+1 fluid ounce = 29.57 milliliter
+
+1 pound = 16 ounce
+1 gallon = 128 fluid ounce
+1 quart = 32 fluid ounce
+1 pint = 16 fuild ounce
+1 cup = 8 fluid ounce
+1 tablespoon = 1/2 fluid ounce
+1 teaspoon = 1/6 fluid ounce
+
+
+Input:
+coaster: string
+
+Constraints:
+0 <= coaster <= 300 chars
+
+Output:
+beam_length: string
+
+Tags:
+String-Parse
