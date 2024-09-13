@@ -1,0 +1,32 @@
+Name: Springs
+
+Difficulty: Easy
+
+Problem:
+[Insert theming]
+The magnitude of the force that a spring exerts when compressed a distance (x) is given by the equation F=kx, where k is a property of the given spring known as the "spring constant". 
+If [character] requires a spring that can hold AT LEAST min_force newtons of force when the spring is compressed a distance of d meters, what is the cheapest spring that [character] can buy to fulfill these requirements?
+Given an array prices, where the ith value represents the price of the ith spring, and an array springs, where the ith value represents the spring constant of the ith spring, return the minimum price needed for the spring to satisfy the given requirements or -1 if it is impossible.
+
+Input:
+prices: array[float]
+springs: array[integer]
+min_force: integer
+d: float
+
+Constraints:
+0 < prices.length < 1000
+0 < springs.length < 1000
+0 < prices[i] < 10000
+0 < springs[i] < 10000
+prices.length == springs.length
+0 < min_force < 10000
+0 < d < 5
+
+Output:
+min_price: float
+
+Tags:
+Math
+Physics
+Optimization
