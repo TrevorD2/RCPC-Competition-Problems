@@ -2,7 +2,15 @@ Name: The Imperial Recipe
 
 Difficulty: Medium
 
-Problem:
+Problem: 
+Your friend from germany just came to the U.S, and you want to teach him your favorite recipes.
+However, he doesn't understand the imperial system of measurement (because it makes no sense).
+
+Given a measurement, unit, and ingrediant, return the converted version usign the format below.
+Convert all imperial units to metric and round all conversions to 1 decimal places.
+Do not convert non imperial units (ie. 1 pinch) to metric
+
+"{metric_measurement} {metric_unit} of {ingrediant}"
 
 1 ounce = 28.35 gram
 1 fluid ounce = 29.57 milliliter
@@ -17,13 +25,15 @@ Problem:
 
 
 Input:
-coaster: string
+measurement: float
+unit: str
+ingrediant: str
 
 Constraints:
 0 <= coaster <= 300 chars
 
 Output:
-beam_length: string
+metric_recipe: string
 
 Tags:
-String-Parse
+Math, String-Format
