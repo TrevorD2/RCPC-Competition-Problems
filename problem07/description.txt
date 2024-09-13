@@ -1,11 +1,11 @@
-Name: 
+Name: 404 Support Beams Not Found
 
 Difficulty: Medium
 
 Problem:
 Six Flags is making a new roller coaster and wants to find out the total length of all the support beams needed.
 Given a graph of #’s representing the roller coaster’s track, find out how many meters of support beams need to be placed if there needs to be support beams all the way from under the track (#) to the ground (-).
-Note: the x-axis always has a scaling of 1, but the y-axis may be scaled.
+Note: the x-axis always has a scaling of 1, but the y-axis may be scaled (using an integer or float).
 
 Input:
 coaster: string
@@ -14,7 +14,7 @@ Constraints:
 0 <= coaster <= 300 chars
 
 Output:
-beam_length: string
+beam_length: float
 
 Tags:
 String-Parse

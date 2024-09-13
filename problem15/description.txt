@@ -1,0 +1,29 @@
+Name: Stablize Conway
+
+Difficulty: Medium
+
+Problem: 
+You are given a grid of filled (*) and empty ( ) cells following the rules of conway's game of life (seen below)
+Starting on generation 0, after how many generations will it take before the population stablizes?
+A population is stable when either all cells are in the same state as the last generation or
+
+1. Any live cell with fewer than 2 live neighbors dies - underpopulation
+2. Any live cell with 2 or 3 live neighbors lives - stable population
+3. Any live cell with more than 3 live neighbors dies - underpopulation
+4. Any dead cell with exactly three live neighbours becomes a live cell - reproduction
+5. Any cell born on the edge of the grid dies - cosmic correction
+
+
+Input:
+grid: str
+
+Constraints:
+0 <= grid <= 2500 chars
+0 <= grid_length <= 50 chars
+0 <= grid_height <= 50 chars
+
+Output:
+stable_generation: int
+
+Tags:
+String-Parse, Simulation
