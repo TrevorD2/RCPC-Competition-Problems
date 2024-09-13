@@ -5,15 +5,15 @@ def solution(grid: str) -> str:
 
     print("\n".join(["".join(row) for row in current_grid]))
 
-    gen = 0
+    generation_count = 0
     while current_grid != last_grid:
         last_grid = current_grid
         current_grid = next(current_grid, grid_length, grid_height)
         print("-"*15)
         print("\n".join(["".join(row) for row in current_grid]))
-        gen += 1
+        generation_count += 1
     
-    return gen
+    return generation_count
 
 
 def next(grid_arr: str, grid_length: int, grid_height: int):
@@ -34,7 +34,6 @@ def next(grid_arr: str, grid_length: int, grid_height: int):
             
 
     return next_grid
-
 
 
 

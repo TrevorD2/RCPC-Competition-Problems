@@ -15,7 +15,7 @@ A population is stable when either all cells are in the same state as the last g
 
 
 Input:
-grid: str
+grid: string
 
 Constraints:
 0 <= grid <= 2500 chars
@@ -23,7 +23,7 @@ Constraints:
 0 <= grid_height <= 50 chars
 
 Output:
-stable_generation: int
+generation_count: integer
 
 Tags:
 String-Parse, Simulation
