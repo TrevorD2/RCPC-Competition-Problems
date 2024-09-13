@@ -1,4 +1,4 @@
-Name: Hello Programmers
+Name: Hello RHS
 
 Difficulty: Easy
 
@@ -17,4 +17,4 @@ Output:
 welcome: string
 
 Tags:
-String
+String-Format

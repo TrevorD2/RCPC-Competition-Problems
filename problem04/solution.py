@@ -1,9 +1,10 @@
-def solution(prices:list[float], springs:list[int], min_force:int, d:float) -> float:
-    min_constant = min_force/d
+def solution(prices:list[float], springs:list[int], min_force:int, x:float) -> float:
+    min_constant = min_force/x
 
     min_price = float("INF")
     for i in range(len(springs)):
-        if springs[i]>=min_constant: min_price = min(min_price, prices[i])
+        if springs[i] >= min_constant:
+            min_price = min(min_price, prices[i])
 
     return min_price if min_price != float("INF") else -1
 

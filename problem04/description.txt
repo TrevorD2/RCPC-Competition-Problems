@@ -12,7 +12,7 @@ Input:
 prices: array[float]
 springs: array[integer]
 min_force: integer
-d: float
+x: float
 
 Constraints:
 0 < prices.length < 1000
@@ -21,7 +21,7 @@ Constraints:
 0 < springs[i] < 10000
 prices.length == springs.length
 0 < min_force < 10000
-0 < d < 5
+0 < x < 5
 
 Output:
 min_price: float

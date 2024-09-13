@@ -22,5 +22,4 @@ Output:
 dot_product: integer
 
 Tags: 
-Math
-Arrays
+Math, Arrays
