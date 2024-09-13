@@ -1,0 +1,10 @@
+#Please use consistent variable names between descirption and solution (password vs ciphertext)
+#Also im not sure if all use cases here will actually be 1:1
+#ie. (7 * 5) % 10 == (5 * 5) % 10 == 5
+#unless you wanna carefully curate values, might need to change the algorithm
+#also also, why did u add P
+#also also also, please use better formatting for your math operations and function def
+
+(i*D)%11==1 should be (i*D) % 11 == 1
+
+def mapping(integer:int)->int: should be def mapping(integer: int) -> int:

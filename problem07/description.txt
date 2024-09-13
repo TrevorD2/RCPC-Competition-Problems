@@ -1,0 +1,18 @@
+Name: 
+
+Difficulty: Medium
+
+Problem:
+2. Six Flags is making a roller coaster and wants to find out the total length of all the support beams he needs. Given a graph of #’s representing the roller coaster’s track, find out how many meters of support beams need to be placed if there needs to be support beams all the way from the track to the ground. Note: the x-axis always has a scaling of 1, but the y-axis may be scaled.
+
+Input:
+coaster: string
+
+Constraints:
+0 <= coaster <= 300 chars
+
+Output:
+beam_length: string
+
+Tags:
+String-Parse

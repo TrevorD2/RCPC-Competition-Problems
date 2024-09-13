@@ -21,7 +21,7 @@ Constraints:
 The combination of (D, C) results in a valid one-to-one mapping
 
 Outputs:
-plain_text: string
+plaintext: string
 
 Tags:
 Math
