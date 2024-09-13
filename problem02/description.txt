@@ -11,8 +11,8 @@ Despite this revolutionary theory, Vector can only calculate his dot products by
 Given two arrays of numbers, u and v, each containing n numbers, calculate and return the dot product of u and v.
 
 Inputs:
-u: array of integers
-v: array of integers
+u: array[integer]
+v: array[integer]
 
 Constraints:
 1 ≤ n ≤ 10,000
