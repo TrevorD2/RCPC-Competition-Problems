@@ -1,11 +1,11 @@
 def solution(prices:list[float], springs:list[int], min_force:int, d:float) -> float:
     min_constant = min_force/d
 
-    min_price = -1
+    min_price = float("INF")
     for i in range(len(springs)):
         if springs[i]>=min_constant: min_price = min(min_price, prices[i])
 
-    return min_price
+    return min_price if min_price != float("INF") else -1
 
 from testcases import io_dict
 if __name__ == "__main__":
