@@ -1,7 +1,7 @@
-def solution(coaster: str) -> int:
+def solution(coaster: str) -> float:
     slices = coaster.split("\n")
-    y = int(slices[0].split("|")[0])
-    dy = int(slices[0].split("|")[0]) - int(slices[1].split("|")[0])
+    y = float(slices[0].split("|")[0])
+    dy = float(slices[0].split("|")[0]) - float(slices[1].split("|")[0])
 
     beam_length = 0
     for slice in slices[:-1]:
