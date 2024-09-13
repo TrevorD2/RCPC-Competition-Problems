@@ -12,7 +12,7 @@ Given the values of D and C, decrypt the string of numbers in order to retrieve 
 Inputs:
 D: int
 C: int
-password: string
+ciphertext: string
 
 Constraints:
 1 ≤ D ≤ 1000

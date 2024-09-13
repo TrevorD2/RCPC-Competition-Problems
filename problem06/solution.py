@@ -3,11 +3,11 @@ def solution(D:int, C:int, ciphertext:str)->str:
 
     multiplicative_inverse = -1
     for i in range(0,11):
-        if (i*D)%11==1: 
+        if (i*D) % 11 == 1: 
             multiplicative_inverse = i
             break
 
-    additive_inverse = 11-(C%11)
+    additive_inverse = 11 - (C % 11)
 
     def mapping(integer:int)->int:
         return (multiplicative_inverse*(additive_inverse+integer)) % 11
