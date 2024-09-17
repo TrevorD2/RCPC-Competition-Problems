@@ -5,9 +5,10 @@ def solution(grid: str) -> str:
 
     print("\n".join(["".join(row) for row in current_grid]))
 
+    history = []
     generation_count = 0
-    while current_grid != last_grid:
-        last_grid = current_grid
+    while current_grid not in history:
+        history.append(current_grid)
         current_grid = next(current_grid, grid_length, grid_height)
         print("-"*15)
         print("\n".join(["".join(row) for row in current_grid]))
