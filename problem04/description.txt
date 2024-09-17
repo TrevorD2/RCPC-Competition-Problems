@@ -5,7 +5,7 @@ Difficulty: Easy
 Problem:
 Bart Simpson is jealous of his neighbor's trampoline, and decides to take it upon himself to build a better one. In building a trampoline, Bart needs to find the correct springs that can hold an appropriate amount of weight, whilst being cheap enough so that he can afford it off of his small allowance.
 The magnitude of the force that a spring exerts when compressed a distance (x) is given by the equation F=kx, where k is a property of the given spring known as the "spring constant". 
-If Bart requires a spring that can hold AT LEAST min_force newtons of force when the spring is compressed a distance of d meters, what is the cheapest spring that Bart can buy to fulfill these requirements?
+If Bart requires a spring that can hold AT LEAST min_force newtons of force when the spring is compressed a distance of x meters, what is the cheapest spring that Bart can buy to fulfill these requirements?
 Given an array prices, where the ith value represents the price of the ith spring, and an array springs, where the ith value represents the spring constant of the ith spring, return the minimum price needed for the spring to satisfy the given requirements or -1 if it is impossible.
 
 Input:
