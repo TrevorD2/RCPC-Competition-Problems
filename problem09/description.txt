@@ -26,8 +26,8 @@ Do not convert non imperial units (ie. 1 pinch) to metric
 
 Input:
 measurement: float
-unit: str
-ingrediant: str
+unit: string
+ingrediant: string
 
 Constraints:
 0 <= measurement <= 10

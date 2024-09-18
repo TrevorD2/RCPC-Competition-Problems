@@ -1,0 +1,26 @@
+Name: Mirror Mirror on the Funhouse Wall
+
+Difficulty: Medium
+
+Problem:
+Aftering entering a house of mirrors, you ask the mirror you stare into one of the many mirrors and see a fancy tophat.
+To be the fanciest of them all, you need to get that tophat, but you don't know where it is in the house of mirrors.
+Given your coordinate position in a string representing the funhouse, follow the path of the mirrors which redirect light at a 90 degree angle. Mirrors are represented by the / and \ characters.
+For example, when the light approaches from the left of \, it will be redirected downwards.
+
+Input:
+funhouse: string
+start_pos: array[integer, integer]
+
+Constraints:
+0 <= string <= 2500 chars
+0 <= funhouse_length <= 50 chars
+0 <= funhouse_height <= 50 chars
+0 <= start_pos[0] <= funhouse_length - 1
+0 <= start_pos[1] <= funhouse_height - 1
+
+Output:
+tophat_pos: array[integer, integer]
+
+Tags:
+String-Parse, Simulation
