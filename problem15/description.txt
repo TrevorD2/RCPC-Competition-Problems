@@ -7,7 +7,7 @@ You are given a grid of filled (*) and empty ( ) cells following the rules of co
 Starting on generation 0, after how many generations will it take before the population stablizes?
 A generation's population is stable when
 1. All cells are in the same state as the last generation OR
-2. All cells are oscillating between a constant pattern (this occurs when the current generation has the same arrangment of cells as a previous generation)
+2. All cells are looping through an oscillating pattern (this occurs when the current generation has the same arrangment of cells as a previous generation)
 
 1. Any live cell with fewer than 2 live neighbors dies - underpopulation
 2. Any live cell with 2 or 3 live neighbors lives - stable population
