@@ -6,18 +6,21 @@ Problem:
 Aftering entering a house of mirrors, you ask the mirror you stare into one of the many mirrors and see a fancy tophat.
 To be the fanciest of them all, you need to get that tophat, but you don't know where it is in the house of mirrors.
 Given your coordinate position in a string representing the funhouse, follow the path of the mirrors which redirect light at a 90 degree angle. Mirrors are represented by the / and \ characters.
+Once the path hits the edge of the funhouse (reaches the string boundary on an empty tile), you have found the tophat.
 For example, when the light approaches from the left of \, it will be redirected downwards.
 
 Input:
 funhouse: string
 start_pos: array[integer, integer]
+start_direction: string
 
 Constraints:
-0 <= string <= 2500 chars
+0 <= funhouse <= 2500 chars
 0 <= funhouse_length <= 50 chars
 0 <= funhouse_height <= 50 chars
 0 <= start_pos[0] <= funhouse_length - 1
 0 <= start_pos[1] <= funhouse_height - 1
+start_direction in ["up", "down", "left", "right"]
 
 Output:
 tophat_pos: array[integer, integer]

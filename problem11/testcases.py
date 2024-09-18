@@ -1,5 +1,5 @@
 io_dict = {
-    '               \n          /  \\ \n               \n               \n               \n    x     /    \n               \n               \n     /        \\\n               \n             \\/\n               \n               \n               \n               ' : 0
+    ('               \n          /  \\ \n               \n               \n               \n    x     /    \n               \n               \n     /        \\\n               \n             \\/\n               \n               \n               \n               ', (4, 5), "right") : (5, 14)
 }
 
 if __name__ == "__main__":
