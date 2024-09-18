@@ -1,25 +1,30 @@
+from functools import cache
 def solution(prices:list[float], springs:list[int], min_force:int, x:float) -> float:
     min_constant = min_force/x
-    spring = springs[0]
+    spring = 0
 
+    @cache
     def dfs(i):
+        print("index:", i)
         nonlocal spring
-        if spring > min_constant: return 0
-        if i >= len(springs): return float("INF")
+        print(spring)
+        if spring >= min_constant: return 0
+        if i == len(springs): return float("INF")
 
         possible = []
 
-        spring += springs[i]
+        #Add in parallel
+        spring+=springs[i]
+        print("Price:", prices[i])
         possible.append(prices[i]+dfs(i+1))
-        spring-=springs[i]
-        spring = ((1/spring) + (1/springs[i]))**-1
-        possible.append(prices[i]+dfs(i+1))
-        spring = springs[i]
-        possible.append(prices[i]+dfs(i+1))
-
+        
+        #Do not add
+        spring = 0
+        possible.append(dfs(i+1))
+        print(possible)
         return min(possible)
     
-    ans = dfs(1)
+    ans = dfs(0)
     return ans if ans!=float("INF") else -1
 
 from testcases import io_dict
