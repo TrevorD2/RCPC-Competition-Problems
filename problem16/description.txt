@@ -4,10 +4,10 @@ Difficulty: Medium
 
 Problem:
 Before purchasing the springs for his trampoline, Bart's sister Lisa revealed to him that springs can actually be combined to form new springs! When two springs are added in parallel, their spring constants are added together through the equation kₑ = Σk. When springs are added in series, the equivalent spring constant can be represented through the equation 1/kₑ = Σ1/k.
-Given this new knowledge, what is the minimum price Bart can expend on a combination of springs that can support AT LEAST min_force amount of force when compressed a distance of x meters.
+Given this new knowledge, what is the minimum price Bart can expend on a combination of springs that can support AT LEAST min_force amount of force when compressed a distance of x meters. Note that each spring can only be used once.
 
 Inputs:
-prices: array[float]
+prices: array[integer]
 springs: array[integer]
 min_force: integer
 x: float

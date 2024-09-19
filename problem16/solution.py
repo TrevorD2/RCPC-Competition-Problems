@@ -1,30 +1,24 @@
 from functools import cache
 def solution(prices:list[float], springs:list[int], min_force:int, x:float) -> float:
     min_constant = min_force/x
-    spring = 0
-
-    @cache
-    def dfs(i):
-        print("index:", i)
-        nonlocal spring
-        print(spring)
-        if spring >= min_constant: return 0
-        if i == len(springs): return float("INF")
-
-        possible = []
-
-        #Add in parallel
-        spring+=springs[i]
-        print("Price:", prices[i])
-        possible.append(prices[i]+dfs(i+1))
-        
-        #Do not add
-        spring = 0
-        possible.append(dfs(i+1))
-        print(possible)
-        return min(possible)
     
-    ans = dfs(0)
+    @cache
+    def rec(ke, bitmask):
+        if ke >=min_constant: return 0
+
+        min_cost = float("INF")
+
+        for i in range(len(springs)):
+            if bitmask & (1<<i): continue
+
+            price = prices[i]
+            k = springs[i]
+            new_mask = bitmask | (1<<i)
+            min_cost = min(min_cost, price + rec(ke+k, new_mask))
+
+        return min_cost
+    
+    ans = rec(0, 0)
     return ans if ans!=float("INF") else -1
 
 from testcases import io_dict
