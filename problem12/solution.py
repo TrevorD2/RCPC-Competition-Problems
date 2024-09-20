@@ -26,11 +26,22 @@ def solution(points: list[list[int]]) -> int:
 
             if min(dx, dy) == 0: 
                 side = max(dx, dy)
-                points_to_check.append()
+                if dx==0:
+                    points_to_check.append((x1+side, y1))
+                    points_to_check.append(x2+side, y2)
+                else:
+                    points_to_check.append((x1))
 
             else:
-                points_to_check.append()
-                points_to_check.append()
+                if x1 < x2:
+                    points_to_check.append((x1+dx, y1))
+                else:
+                    points_to_check.append((x2+dx, y2))
+                
+                if y1 < y2:
+                    points_to_check.append(x1, y1+dy)
+                else:
+                    points_to_check.append((x2, y2+dy))
 
             num_squares+=check_points(points_to_check)
 
