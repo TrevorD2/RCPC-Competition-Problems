@@ -4,9 +4,9 @@ def solution(funhouse_str: str, start_pos: list[int], start_direction: str) -> l
     dir_str_to_arr = {"up": [0, -1], "down" : [0, 1], "left" : [-1, 0], "right" : [1, 0]}
     dx, dy = dir_str_to_arr[start_direction]
 
-
     funhouse_length = len(funhouse[0])
     funhouse_height = len(funhouse)
+    
     while 0 <= x < funhouse_length and 0 <= y < funhouse_height:
         print(x, y, funhouse[y][x])
         if funhouse[y][x] in "/\\":

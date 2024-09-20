@@ -1,0 +1,25 @@
+Name: Christmas Snow
+
+Difficulty: Medium
+
+Problem:
+It's Christmas time and snow is falling. Given a 2d side view of a landscape represented by a string, return the same landscape after the snow has fallen.
+At the top of each column will be a number representing the amount of snow particles that will fall.
+Snow particles (represented by *) will fall straight down until they hit another non-empty character.
+If a snow particle hits a slash character (/ or \), then it will be pushed to the right or left, according to the direction of the slash.
+
+
+Input:
+landscape: string
+
+Constraints:
+0 <= funhouse <= 2500 chars
+0 <= funhouse_length <= 50 chars
+0 <= funhouse_height <= 50 chars
+0 <= snow_particles_per_column <= 10
+
+Output:
+snowy_landscape: string
+
+Tags:
+String-Parse, String-Format, Simulation
