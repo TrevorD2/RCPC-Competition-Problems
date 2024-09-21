@@ -1,0 +1,16 @@
+Name: Slippery Slopes
+
+Difficulty: Medium
+
+Problem:
+[character] is skiing down a mountain, and wants to find the longest decreasing subsequence on his route. Given an array heights corresponding to the elevation of the mountain along [character]'s route, return the longest decreasing subsequence of heights. A subsequence is defined as a sequence that can be derived from another sequence by deleting some or no elements without changing the order of the remaining elements.
+
+Input:
+heights: array[integer]
+
+Constraints:
+0 < heights.length < 1000
+0 < heights[i].length < 1000
+
+Output:
+longest_subsequence: array[integer]
