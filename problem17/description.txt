@@ -6,14 +6,14 @@ Problem:
 Bill Cipher, your favorite murderous triangle, is trying to hide the secrets of armageddon using an equally triangular cipher.
 Given the cipher text, decode to plaintext. The rules used to ENCODE the text are listed below.
 
-1. If the message has an odd length, add a space to the end of it.
+1. Remove all trailing and leading spaces/indentation. If the message has an odd length, add a space to the end of it.
 
 2. Convert each character to an integer by 
-    A. 0-indexing it on the string " qwertyuiopasdfghjklzxcvbnm" B. Doubling for a capital letter C. Adding 7.
+    A. 0-indexing it on the string " qwertyuiopasdfghjklzxcvbnm" B. Adding 5 C. Adding 30 for capital letters 
     Note: Spaces are to be treated as index 26
 
-3. Group each number integer pairs (if odd length string, use a pair of 0). The first of each pair will be the height and the second the base of a equilateral triangle.
-   Now, create a new pairs using the triangle's perimeter and area.
+3. Group each number into integer pairs. The first of each pair will be the height and the second will be the base of an equilateral triangle.
+   Now, create a new pairs using the triangle's perimeter and twice its area.
 
 4. Flatten your list of pairs and convert each number to hexadecimal. Make sure to include leading 0's to make it total 3 hexadecimal places.
 

@@ -2,6 +2,7 @@ def solution(plaintext: str) -> str:
     keyboard = " qwertyuiopasdfghjklzxcvbnm"
 
     #1
+    plaintext = plaintext.strip()
     if len(plaintext) % 2 == 1:
         plaintext += " "
 
@@ -9,24 +10,24 @@ def solution(plaintext: str) -> str:
     nums = []
     for char in plaintext:
         is_capital = char.lower() != char
-        num = keyboard.index(char.lower())*(1 + is_capital) + 7
+        num = keyboard.index(char.lower()) + 5 + 30 * is_capital
         nums.append(num)
-    
+
     #3
-    perimeter_area = []
+    perimeter_area_pairs = []
     for i in range(0, len(nums), 2):
         h, B = nums[i], nums[i+1]
         P, A = 3*B, h*B
-        perimeter_area.append((P, A))
+        perimeter_area_pairs.append((P, A))
 
     #4
     hex_list = []
-    for pair in perimeter_area:
+    for pair in perimeter_area_pairs:
         for num in pair:
             hex_num = (hex(num)[2:]).zfill(3)
             for char in hex_num:
                 hex_list.append(char)
-
+    
     #5
     ciphertext_list = []
     cur_index = 0
