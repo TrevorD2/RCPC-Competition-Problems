@@ -4,13 +4,14 @@ Difficulty: Medium
 
 Problem:
 Whilst delivering presents, Santa's sleigh has broken just before delivering presents to the final n houses! Instead of flying by sleigh, Santa must resort to driving a truck from house to house instead.
-Santa wishes to only drive past a given house one time, as passing the house again might raise suspicion. Given a list of road connections, where the ith value (a, b) represents a bidirectional connection between house a and b, return true if Santa can travel to each house exactly once or false otherwise.
+Santa wishes to only drive past a given house one time, as passing the house again might raise suspicion. Given a list of road connections, where the ith value (a, b) represents a bidirectional connection between house a and b, and the number of houses, n, return true if Santa can travel to each house exactly once or false otherwise.
 
 Input:
 roads: array[integer, integer]
 
 Constraints:
 0 < roads.length < 100
+0 < n < 1000
 
 Output:
 possible: boolean

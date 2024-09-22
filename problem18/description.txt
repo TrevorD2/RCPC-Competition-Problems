@@ -1,0 +1,19 @@
+Name: Doc's Quantum Escape
+
+Difficulty: Hard
+
+Problem:
+Doc Brown and Marty McFly got stuck in the past, and the DeLorean's flux capacitor needs to be repaired in order for him to get back to the future.
+The flux capacitor operates only when in a particular quantum state (q_final), and it is currently in the quantum state (q_initial). In quantum physics, particles can transition from one quantum state to another in a probabilistic manner. Doc Brown is an expert quantum physiscist, and as such knows the exact probabilities of all state transitions.
+Doc Brown provides you with a list of state transitions, where the ith transition (a, b, p) indicates that the flux capacitor can transition from state a to state b with a probability of p. Given this list of state transitions, and the initial and desired state of the flux capacitor, return the sequence of quantum states that would lead to the highest likelihood to get from the initial to desired state.
+
+Input:
+transitions: array[integer, integer, float]
+q_initial: integer
+q_final: integer
+
+Constraints:
+0 < transitions.length < 1000
+
+Output:
+most_likely_sequence: array[integer]
