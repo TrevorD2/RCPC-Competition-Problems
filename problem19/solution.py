@@ -1,5 +1,5 @@
 def solution(floors: str) -> str:
-    def next_pos(floor, solution_paths, y, x, letter_history, pos_history):
+    def search_path(floor, solution_paths, y, x, letter_history, pos_history):
         npos_to_dir = {(y-1, x) : "U", (y+1, x) : "D", (y, x-1) : "L", (y, x+1) : "R"}
         for ny, nx in npos_to_dir:
             try:
@@ -10,45 +10,67 @@ def solution(floors: str) -> str:
                     continue
                 if char in "#S":
                     continue
-                if char == "T":
-                    solution_paths.append(n_letter_history)
+                if char == "X":
+                    solution_paths.append((ny, nx, n_letter_history))
                     continue
 
                 n_pos_history = pos_history.copy()
                 n_pos_history.add((ny, nx))
 
-                next_pos(floor, solution_paths, ny, nx, n_letter_history, n_pos_history)
+                search_path(floor, solution_paths, ny, nx, n_letter_history, n_pos_history)
 
             except:
                 pass
 
+    def search_floor(Sy, Sx, floor, letter_history):
+        if "T" in floor:
+            T_positions = []
+            for y, row in enumerate(floor.split("\n")):
+                for x, char in enumerate(row):
+                    if char == "T":
+                        T_positions.append((y, x))
+            
+            solution_paths = []
+            for Ty, Tx in T_positions:
+                floor_ver = floor.replace("T", " ").split("\n")
+                floor_ver[Ty] = floor_ver[Ty][:Tx] + "X" + floor_ver[Ty][Tx+1:]
 
-    for floor_str in floors:
-
-        floor = floor_str.split("\n")
-
-        start_y, start_x = 0, 0
-        T_positions = []
-        for y, row in enumerate(floor):
-            for x, char in enumerate(row):
-                if char == "S":
-                    start_y, start_x = (y, x)
-                elif char == "T":
-                    T_positions.append((y, x))
-
-        for Ty, Tx in T_positions:
-            floor_ver = ("\n".join(floor)).replace("T", " ").split("\n")
-            floor_ver[Ty] = floor_ver[Ty][:Tx] + "T" + floor_ver[Ty][Tx+1:]
+                search_path(floor_ver, solution_paths, Sy, Sx, letter_history, set())
+            
+            return [(y, x, letter_history + "T") for y, x, letter_history in solution_paths]
+        
+        else:
+            floor_ver = floor.replace("E", "X").split("\n")
 
             solution_paths = []
+            search_path(floor_ver, solution_paths, Sy, Sx, letter_history, set())
+            return [(-1, -1, path + "E") for y, x, path in solution_paths]
+            
 
-            next_pos(floor_ver, solution_paths, start_y, start_x, "S", set())
-            print(solution_paths)
 
+    Sy, Sx = 0, 0
+    for y, row in enumerate(floors[0].split("\n")):
+        for x, char in enumerate(row):
+            if char == "S":
+                Sy, Sx = y, x
+
+    this_iteration = [(Sy, Sx, "S")]
+    for floor in floors:
+        next_iteration = []
+        for y, x, letter_history in this_iteration:
+            next_iteration.extend(search_floor(y, x, floor, letter_history))
+
+        this_iteration = next_iteration
+    
+    for y, x, letter_history in this_iteration:
+        print(letter_history)
+
+    return min(this_iteration, key = lambda x: len(x[2]))[2]
+#Need to do testing to double check answers
 
 
 from testcases import io_dict
 if __name__ == "__main__":
     for i in io_dict:
         sol = solution(i)
-        #print(sol, "=", sol==io_dict[i])
+        print(sol, "=", sol==io_dict[i])
