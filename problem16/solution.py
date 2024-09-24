@@ -21,7 +21,7 @@ def solution(prices:list[float], springs:list[int], min_force:int, x:float) -> f
     ans = rec(0, 0)
     return ans if ans!=float("INF") else -1
 
-def solution(prices:list[float], springs:list[int], min_force:int, x:float) -> float:
+def solution2(prices:list[float], springs:list[int], min_force:int, x:float) -> float:
     min_k = min_force/x
     price_springs = [(prices[i], springs[i]) for i in range(len(prices))]
     min_p = float("inf")
