@@ -20,6 +20,7 @@ def solution(connections: list[list[int]], treasures: list[int], actions: str, s
 
     cur_state = frozenset(e_closure(start))
     for action in actions:
+        print(cur_state)
         next_state = set()
 
         for substate in cur_state:
