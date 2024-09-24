@@ -3,7 +3,7 @@ Name: Illinois Jane and the Temple Desicions II
 Difficulty: Pain
 
 Problem:
-Illinois Jane has once again ventured into the Temple of Decisions. Upon returning however, Illinois Jane realizes that the temple rooms now can contain wormholes that teleport her into other rooms!
+Illinois Jane has once again ventured into the Temple of Decisions. Upon returning however, Illinois Jane realizes that the temple rooms now can contain wormholes that teleport her into other rooms! Additionally, doors are no longer guarenteed to have unique labels.
 When Illinois Jane enters a room with a wormhole, she can choose to transport herself through the wormhole or open one of the other doors in the room (see pt. 1). If she chooses to travel through the wormhole, it does not require an action.
 You are given a list of connections, where the ith connection (a, b, t) represents a one-way connection from room a to b with label t; in this case, t could be "W" meaning that the connection is a wormhole. You are also given a list of rooms with archaeological treasures, a string containing the actions that Illinois Jane takes, and Illinois Jane's starting position.
 With this information, return true if Illinois Jane ends in a room with archaeological treasures or false otherwise. Assume Illinois Jane has perfect knowledge of the wormholes, and if going through one or more wormholes will lead to her ending her journey in a treasure room, she will travel through that wormhole.
