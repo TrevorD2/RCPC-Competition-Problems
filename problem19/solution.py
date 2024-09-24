@@ -12,13 +12,12 @@ def solution(floors: str) -> str:
                     continue
                 if char == "T":
                     solution_paths.append(n_letter_history)
-                    print("Hurrah")
                     continue
 
                 n_pos_history = pos_history.copy()
                 n_pos_history.add((ny, nx))
 
-                next_pos(ny, nx, n_letter_history, n_pos_history)
+                next_pos(floor, solution_paths, ny, nx, n_letter_history, n_pos_history)
 
             except:
                 pass
@@ -44,12 +43,7 @@ def solution(floors: str) -> str:
             solution_paths = []
 
             next_pos(floor_ver, solution_paths, start_y, start_x, "S", set())
-            print("\n".join(floor_ver))
             print(solution_paths)
-
-
-
-
 
 
 
