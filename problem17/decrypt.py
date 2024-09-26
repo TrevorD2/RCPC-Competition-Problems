@@ -11,7 +11,7 @@ def solution(ciphertext: str) -> str:
 
     #2
     nums = [num for pair in height_base_pairs for num in pair]
-    keyboard = " qwertyuiopasdfghjklzxcvbnm" + "~"*4 + "qwertyuiopasdfghjklzxcvbnm".upper()
+    keyboard = " qwertyuiopasdfghjklzxcvbnm.,!?'" + "qwertyuiopasdfghjklzxcvbnm".upper()
     chars = [keyboard[num-5] for num in nums]
 
     #1
@@ -19,12 +19,12 @@ def solution(ciphertext: str) -> str:
 
 def one_liner(ciphertext: str) -> str:
     #579 character long one-liner (excluding return and function definition)
-    return "".join([(" qwertyuiopasdfghjklzxcvbnm" + "~"*4 + "qwertyuiopasdfghjklzxcvbnm".upper())[num-5] for num in [num for pair in [[int(3*A/P), int(P/3)] for P, A in [[int(["".join([char for char in ciphertext if char in "0123456789abcdef"][i:i+3]) for i in range(0, len([char for char in ciphertext if char in "0123456789abcdef"]), 3)][i+j], 16) for j in range(2)] for i in range(0, len(["".join([char for char in ciphertext if char in "0123456789abcdef"][i:i+3]) for i in range(0, len([char for char in ciphertext if char in "0123456789abcdef"]), 3)]), 2)]] for num in pair]]).strip()
+    return "".join([(" qwertyuiopasdfghjklzxcvbnm.,!?'" + "qwertyuiopasdfghjklzxcvbnm".upper())[num-5] for num in [num for pair in [[int(3*A/P), int(P/3)] for P, A in [[int(["".join([char for char in ciphertext if char in "0123456789abcdef"][i:i+3]) for i in range(0, len([char for char in ciphertext if char in "0123456789abcdef"]), 3)][i+j], 16) for j in range(2)] for i in range(0, len(["".join([char for char in ciphertext if char in "0123456789abcdef"][i:i+3]) for i in range(0, len([char for char in ciphertext if char in "0123456789abcdef"]), 3)]), 2)]] for num in pair]]).strip()
 
 
 
 from testcases import io_dict
 if __name__ == "__main__":
     for i in io_dict:
-        sol = one_liner(i)
+        sol = solution(i)
         print(sol, "=", sol==io_dict[i])

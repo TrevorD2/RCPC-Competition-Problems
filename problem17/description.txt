@@ -9,7 +9,7 @@ Given the cipher text, decode to plaintext. The rules used to ENCODE the text ar
 1. Remove all trailing and leading spaces/indentation. If the message has an odd length, add a space to the end of it.
 
 2. Convert each character to an integer by 
-    A. 0-indexing it on the string " qwertyuiopasdfghjklzxcvbnm" B. Adding 5 C. Adding 30 for capital letters 
+    A. 0-indexing it on the string " qwertyuiopasdfghjklzxcvbnm.,!?'" B. Adding 5 C. Adding 31 for capital letters 
     Note: Spaces are to be treated as index 26
 
 3. Group each number into integer pairs. The first of each pair will be the height and the second will be the base of an equilateral triangle.

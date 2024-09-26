@@ -1,5 +1,5 @@
 def solution(plaintext: str) -> str:
-    keyboard = " qwertyuiopasdfghjklzxcvbnm"
+    keyboard = " qwertyuiopasdfghjklzxcvbnm.,!?'"
 
     #1
     plaintext = plaintext.strip()
@@ -10,7 +10,7 @@ def solution(plaintext: str) -> str:
     nums = []
     for char in plaintext:
         is_capital = char.lower() != char
-        num = keyboard.index(char.lower()) + 5 + 30 * is_capital
+        num = keyboard.index(char.lower()) + 5 + 31 * is_capital
         nums.append(num)
 
     #3
@@ -53,7 +53,9 @@ def solution(plaintext: str) -> str:
 
 from testcases import io_dict
 if __name__ == "__main__":
-    ciphertext = solution("Beware the Mandelbrot Rainbow")
+    plaintext = "Today's just so wonderful, I feel like chuckling. Ha ha ha. I feel all fuzzy inside like a duckling, full of... Tarantulas, and now that I'm here, tonight, it's gonna get weird! Look at these creatures, not enough features, cats should breathe fire, bears should sing choir. Hmm, very nice. Look at this tower under my power, look at these people, puny and feeble. Whoo hoo. Look, I'm just a triangle trying to save you from the delusions society gave you... Gravity's a lie. So is the sky...Trust in the all seeing, all knowing eye! Look at this money, who's that honey? look through out history, how could you miss me? Seriously, I am all over the place. Look at this weather, I could do better, mandelbrot rainbows, screaming tornadoes. Look at this loser, drinking coffee! ... Now it's decaf. Look at these people, calling me evil. Right back at you, now you're all statues. Now everything you know has disappeared. It's gonna get weird."
+    ciphertext = solution(plaintext)
     print(ciphertext)
+     
     with open("problem17/out.txt", "w") as f:
             f.write(repr(ciphertext))
