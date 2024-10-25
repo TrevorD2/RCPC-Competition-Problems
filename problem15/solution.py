@@ -1,4 +1,4 @@
-def solution(grid: str) -> str:
+def solution(grid: str) -> int:
     last_grid = []
     current_grid = [list(row) for row in grid.split("\n")]
     grid_length, grid_height = len(current_grid[0]), len(current_grid)
@@ -17,7 +17,7 @@ def solution(grid: str) -> str:
     return generation_count
 
 
-def next(grid_arr: str, grid_length: int, grid_height: int):
+def next(grid_arr: str, grid_length: int, grid_height: int) -> list[list[str]]:
     next_grid = [[" " for x in range(grid_length)] for y in range(grid_height)]
 
     for y, row in enumerate(grid_arr):

@@ -21,7 +21,7 @@ grid: string
 
 Constraints:
 0 <= grid <= 2500 chars
-0 <= grid_length <= 50 chars
+0 <= grid_width <= 50 chars
 0 <= grid_height <= 50 chars
 
 Output:

@@ -5,12 +5,12 @@ Difficulty: A Little Pain
 Problem:
 You will be given a series of mazes that make up each floor of the dungeon.
 On the first floor, start at the position of character "S".
-All of the higher floors will have trapdoor(s) labeled "T" which lead to lower floors.
-Reaching a trapdoor will cause you to go to the same position (index) of the floor below.
+The higher floors will have trapdoor(s) labeled "T" which lead to lower floors.
+Entering a trapdoor will cause you to go to the same position (index) of the floor below.
 Once you get to the bottom floor, there will be an exit labeled "E".
 Return your move history, starting with "S", in one long string that brought you from the top door to the bottom.
 "U" for up, "D" for down, "L" for left, "R" for right.
-When standing on the a trapdoor or exit, use their respective floor labels.
+When entering through a trapdoor or exit, use their respective labels.
 ex. "SURRDTLLE"
 
 Input:
@@ -24,4 +24,4 @@ Output:
 move_history: integer
 
 Tags:
-String-Parse, Simulation
+String-Parse, Maze
