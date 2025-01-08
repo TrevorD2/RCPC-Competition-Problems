@@ -6,7 +6,7 @@ Problem:
 Aftering entering a house of mirrors, you ask the mirror you stare into one of the many mirrors and see a fancy tophat.
 To be the fanciest of them all, you need to get that tophat, but you don't know where it is in the house of mirrors.
 Given your coordinate position in a string representing the funhouse, follow the path of the mirrors which redirect light at a 90 degree angle. Mirrors are represented by the / and \ characters.
-Once the path hits the edge of the funhouse (reaches the string boundary on an empty tile), you have found the tophat.
+Once the path hits the edge of the funhouse (reaches the boundary of the string), you have found the tophat.
 For example, when the light approaches from the left of \, it will be redirected downwards.
 
 Input:
