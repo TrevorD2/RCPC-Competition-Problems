@@ -5,7 +5,7 @@ Difficulty: Medium
 Problem:
 Illinois Jane is an entrepid professor, archaeologist, and adventurer who recently stumbled upon the world renown Temple of Decisions. It has been said that many adventurers have tried and failed to secure the historical treasures that hide within.
 The Temple of Decisions consists of a series of interconnected rooms; in each room, there are 0-2 doors labeled 0 or 1. It is guarenteed that in a room with two doors, their labels are unique.
-Given a list of connections, where a connection (a, b, t) denotes a door from room a to room b with label t, a list of rooms with archaeological treasures, and a string containing the actions that Illinois Jane takes, and Illinois Jane's starting position, return true if Illinois Jane ends her journey in a room containing treasure or false otherwise.
+Given a list of connections, where a connection (a, b, t) denotes a door from room a to room b with label t, a list of rooms with archaeological treasures, a string containing the actions that Illinois Jane takes, and Illinois Jane's starting position, return true if Illinois Jane ends her journey in a room containing treasure or false otherwise.
 
 Inputs:
 connections: array[array[integer]]
