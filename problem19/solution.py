@@ -66,11 +66,11 @@ def solution(floors: str) -> str:
         print(letter_history)
 
     return min(this_iteration, key = lambda x: len(x[2]))[2]
-#Need to do testing to double check answers
 
 
 from testcases import io_dict
 if __name__ == "__main__":
+
     for i in io_dict:
         sol = solution(i)
         print(sol, "=", sol==io_dict[i])

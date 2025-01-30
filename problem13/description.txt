@@ -30,7 +30,7 @@ landscape: string
 
 Constraints:
 0 <= landscape <= 2500 chars
-0 <= landscape_length <= 50 chars
+0 <= landscape_length <= 20 chars
 0 <= landscape_height <= 50 chars
 0 <= snow_particles_per_column <= 10
 
