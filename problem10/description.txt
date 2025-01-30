@@ -2,7 +2,7 @@ Name: Sheldon's Coursework
 Difficulty: Medium
 Problem:
 Sheldon is attending East Texas Tech (ETT) and wishes to take his favorite course: Quantum Chromodynamics. However, unfortunately for him, there are many prerequisite courses that Sheldon must take before he can enroll in Quantum Chromodynamics.
-Given a list of prerequisites, where prerequisites[i] is a tuple (a, b) representing that course b is a prerequisite to course a, return an integer representing the number of courses Sheldon must take before he can enroll in Quantum Chromodynamics (represented as course_number).
+Given a list of prerequisites, where prerequisites[i] is a tuple (a, b) representing that course b is a prerequisite to course a, return an integer representing the minimum number of courses Sheldon must take before he can enroll in Quantum Chromodynamics (represented as course_number).
 
 Input:
 prerequisites: array[array[int]]
