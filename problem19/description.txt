@@ -17,7 +17,7 @@ Input:
 floors: list[string]
 
 Constraints:
-0 <= floors <= 10
+0 <= floors <= 5
 0 <= floor_width <= 100
 0 <= floor_height <= 100
 

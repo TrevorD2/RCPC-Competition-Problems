@@ -1,5 +1,48 @@
 io_dict = {
 ("""
+#####################
+#   # # # #   #   # #
+# #T# # # # # ### # #
+# #     #   #   #   #
+# ######### ####### #
+#        S        # #
+# ### ######### ### #
+# #   #     # #     #
+# ####### ### ##### #
+#             T #   #
+#####################
+""".strip(),
+
+"""
+#####################
+#       #  T  #     #
+### # # # ### # ### #
+#   # #   #   # #   #
+# # ### # # ### # # #
+# #   # # #   # # # #
+### ### ### # # #####
+# T # # #   # # #   #
+# # # # ### ### # # #
+# #     #         # #
+#####################
+""".strip(),
+
+"""
+#####################
+#   # # # #   #   # #
+# # # # # # # ### # #
+# #     #   #   #   #
+# ######### ####### #
+#        E        # #
+# ############# ### #
+#     #     # #     #
+# ####### ### ##### #
+#               #   #
+#####################
+""".strip()) 
+: 'SLLLLLLLLUUUURRDTDDDDDLTLUURRRRRRRRE',
+
+("""
 #########################################
 # # #   #     #     #   #     #     #   #
 # # # # ##### # ### ### ### # ### # # # #
@@ -42,6 +85,7 @@ io_dict = {
 #   #           #   #   #       #     # #
 #########################################
 """.strip(),
+
 """
 #########################################
 #   # # # #   #       # #               #
@@ -84,7 +128,79 @@ io_dict = {
 ##### ### ##### ### ### # ### ##### # # #
 #     #   #           # # #     #   #   #
 #########################################
-""".strip()) : "SLUUUULLUULLUULLLLDDLLLLDDLLDDDDLLLLDDDDLLDDDDRRRRRRRRUUUUUUUURRDDDDRRDDRRRRDDLLDDDDLLDDRRRRRRRRDDDDRRRRRRDDRRRRUUUURRRRTDDLLLLUULLLLUULLLLDDDDDDDDE",
+""".strip()) 
+: "SLUUUULLUULLUULLLLDDLLLLDDLLDDDDLLLLDDDDLLDDDDRRRRRRRRUUUUUUUURRDDDDRRDDRRRRDDLLDDDDLLDDRRRRRRRRDDDDRRRRRRDDRRRRUUUURRRRTDDLLLLUULLLLUULLLLDDDDDDDDE",
+
+("""
+#########################################
+# #   # #   #     # # #   #   #   #     #
+# ### # # # ### ### # # # # # # # ##### #
+# #  T  # # # # #   #   #   #   # #     #
+# # ### # ### # # ### ##### ###T##### ###
+# # #       # #     # #   #   # #   # # #
+# ### ##### # ### ### ### ####### # # # #
+#     #   #    S        #   # #   #     #
+######### ### ##### ### ### # # #########
+#           # # # # # # #         T     #
+####### ### # # # ### # ### ##### ### ###
+#   # # # #  T        #       #     #   #
+# # # # # ### # ### ####### # ##### # ###
+# # #     # # #   #   #T#   # #     # # #
+# ### # # # # # ### ### # # # ##### ### #
+# #   # #   # # # # #   # # #   #   # # #
+# ##### ### ### # # # ### ####### ### # #
+# #T  #   #   # #   #   #   #       #   #
+# # ### ########### # ########### # ### #
+#   #   #   # # #       #   # # # #   # #
+### # ### # # # # # # # ### # # # ### # #
+#   #   # # # T # # # #   #       # #   #
+### # # # ##### ####### ##### ##### ### #
+#     #           #   # # #   #T  #     #
+# ####### ### ### # # ### # ##### # ### #
+# #    T    #   #   #   # # # # # #   # #
+### ####### ##### ### ### # # # # ##### #
+#     #       # # # #   #       #   #   #
+# # # ####### # ### # # # # ##### # # ###
+# # #       #       # # # #     # #     #
+#########################################
+""".strip(),
+
+"""
+#########################################
+#     # # #   #       #     #   #       #
+### # # # # ### ### ##### # # ### ##### #
+# # #   # #   #   #   # # #     #   #   #
+# # # # # # # # # ### # ### ### # ### ###
+#   # # #   # # # # # # #         #     #
+# ### ##### # ### # ### ### ### # # # # #
+#   #   #   #         #     # # # # # # #
+# ##### ########### # ### ### ### ### ###
+# # # # # # #       #     #         #   #
+### # # # # ##### ### ############### # #
+#         #     # #   #         #     # #
+# ####### ### ######### ### # ### #######
+# #         #     #   #   # # # #       #
+####### ##### # # # ### ####### # ### ###
+#     #   # # # # # #     #   #     # # #
+# # # # ### ### # # ### # ### # ##### # #
+# # #   # # # # #     # #     #   #   # #
+# ### ### # # # # # # # ### ######### # #
+# # #   #   #   # # #   #     # #       #
+### # # # ### ######### # # ### ### #####
+#   # #               # # #       #     #
+# ######### ### # # ####### # ### # ### #
+#   #     #   # # #   #   # #   # # # # #
+### ### # # # # ####### ######### # # ###
+# #     #   # #   #     # #   # #       #
+# # ### # # ##### ### ### # # # ####### #
+#   #   # # #  E#           #     #     #
+# ##### ### # ####### # ### ####### # ###
+#   #     # #         #   #     #   #   #
+#########################################
+""".strip())
+: 'SLLDDDDTDDRRDDDDDDLLDDRRDDDDRRDDRRRRDDLLLLLLLLUURRE',
+
+
 ("""
 #######################################################################################################################################################
 #   #   #             #     #         #   #   #       #       #   #   #   #           #           #       #       #           #   #   #   #         # #
@@ -395,5 +511,6 @@ io_dict = {
 # ### ### # # ### # # ##### # ##### # ### # ### ### ### # ### # ### ### # ### ### # ### # # # # # # # ### # # # ### ### # # ### # ########### # # ### #
 #         #     # # # #             #   # # #   #   #   #     #   #     #     #   #   #   # # #   # #     #   #     #   #     #             #         #
 #######################################################################################################################################################
-""".strip()) : 'SLLUURRRRRRRRDDRRDDDDDDRRRRRRDDDDDDRRDDDDRRDDDDLLLLLLDDDDDDDDDDRRRRDDRRDDRRRRDDDDRRRRUURRUUUURRUUUUUUUURRUUUUUUUURRRRRRRRRRUUUUUURRUURRDDRRDDRRRRUURRDDRRDDRRRRDDDDLLLLDDLLDDDDDDLLDDDDDDDDDDRRDDRRRRUURRRRDDDDDDDDDDDDDDRRRRUUUULLUUUURRRRDDRRDDDDRRUUUURRUURRUURRUURRRRTLLLLUTDDDLLDDLLDDLLDDDDLLUUUULLUULLLLDDDDRRDDDDLLLLUUUUUUUUUUUUUULLLLDDLLLLUULLUUUUUUUUUURRUUUUUURRUURRRRRRDDRRDDE'
+""".strip()) : 'SLLUURRRRRRRRDDRRDDDDDDRRRRRRDDDDDDRRDDDDRRDDDDLLLLLLDDDDDDDDDDRRRRDDRRDDRRRRDDDDRRRRUURRUUUURRUUUUUUUURRUUUUUUUURRRRRRRRRRUUUUUURRUURRDDRRDDRRRRUURRDDRRDDRRRRDDDDLLLLDDLLDDDDDDLLDDDDDDDDDDRRDDRRRRUURRRRDDDDDDDDDDDDDDRRRRUUUULLUUUURRRRDDRRDDDDRRUUUURRUURRUURRUURRRRTLLLLUTDDDLLDDLLDDLLDDDDLLUUUULLUULLLLDDDDRRDDDDLLLLUUUUUUUUUUUUUULLLLDDLLLLUULLUUUUUUUUUURRUUUUUURRUURRRRRRDDRRDDE',
+
 }
