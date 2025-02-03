@@ -1,6 +1,7 @@
 Name: Santa's Long Drive
 
 Difficulty: Medium
+Points: 6
 
 Problem:
 Whilst delivering presents, Santa's sleigh has broken just before delivering presents to the final n houses! Instead of flying by sleigh, Santa must resort to driving a truck from house to house instead.

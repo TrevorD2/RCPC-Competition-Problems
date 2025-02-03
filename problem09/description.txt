@@ -1,6 +1,7 @@
 Name: The Imperial Recipe
 
 Difficulty: Medium
+Points: 4
 
 Problem: 
 Your friend from germany just came to the U.S, and you want to teach him your favorite recipes.

@@ -1,6 +1,7 @@
 Name: Vector's Vectors
 
 Difficulty: Easy
+Points: 1
 
 Problem:
 Vector (from Despicable Me) has invented a new kind of math to aid his nefarious plots! He has invented a structure that he calls a "vector" which can be used for a variety of applications.

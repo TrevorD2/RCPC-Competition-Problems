@@ -1,6 +1,7 @@
 Name: Stablize Conway
 
 Difficulty: Hard
+Points: 9
 
 Problem: 
 You are given a grid of filled (*) and empty ( ) cells following the rules of conway's game of life (seen below)

@@ -1,6 +1,7 @@
 Name: Pablo's New Clock
 
 Difficulty: Easy
+Points: 2
 
 Problem:
 Pablo is trying to tell the time, but his clock only gives him the time in minutes since the day started

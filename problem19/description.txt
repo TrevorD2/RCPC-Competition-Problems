@@ -1,6 +1,7 @@
 Name: Delve the Dungeon
 
 Difficulty: Advanced
+Points: 12
 
 Problem:
 You will be given a series of mazes that make up each floor of the dungeon.

@@ -1,6 +1,7 @@
 Name: Timmy's ABC's
 
 Difficulty: Easy
+Points: 2
 
 Problem:
 Timmy has a hard time remembering his ABC’s, especially for the later letters.

@@ -1,6 +1,7 @@
 Name: Bart's Trampoline
 
 Difficulty: Easy
+Points: 2
 
 Problem:
 Bart Simpson is jealous of his neighbor's trampoline, and decides to take it upon himself to build a better one. In building a trampoline, Bart needs to find the correct springs that can hold an appropriate amount of weight, whilst being cheap enough so that he can afford it off of his small allowance.

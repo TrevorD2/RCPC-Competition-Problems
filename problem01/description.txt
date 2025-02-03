@@ -1,6 +1,7 @@
 Name: Samantha & The Cube
 
 Difficulty: Easy
+Points: 1
 
 Problem:
 Samantha is going to the metal cube store, as one does, to buy a tungsten cubes. 

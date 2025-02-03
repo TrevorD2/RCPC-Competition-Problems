@@ -1,6 +1,7 @@
 Name: Doc's Quantum Escape
 
 Difficulty: Hard
+Points: 11
 
 Problem:
 Doc Brown and Marty McFly got stuck in the past, and the DeLorean's flux capacitor needs to be repaired in order for him to get back to the future.

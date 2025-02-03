@@ -1,6 +1,7 @@
 Name: Bill's Cipher
 
 Difficulty: Hard
+Points: 10
 
 Problem: 
 Bill Cipher, your favorite murderous triangle, is trying to hide the secrets of armageddon using an equally triangular cipher.

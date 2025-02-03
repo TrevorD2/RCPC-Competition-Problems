@@ -1,6 +1,7 @@
 Name: Mirror Mirror on the Funhouse Wall
 
 Difficulty: Medium
+Points: 5
 
 Problem:
 Aftering entering a house of mirrors, you ask the mirror you stare into one of the many mirrors and see a fancy tophat.

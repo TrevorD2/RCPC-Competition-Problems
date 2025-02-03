@@ -1,6 +1,7 @@
 Name: Illinois Jane and the Temple of Desicions II
 
 Difficulty: Expert
+Points: 15
 
 Problem:
 Illinois Jane has once again ventured into the Temple of Decisions. Upon returning however, Illinois Jane realizes that the temple rooms now can contain wormholes that teleport her into other rooms! Additionally, doors are no longer guarenteed to have unique labels.

@@ -1,6 +1,7 @@
 Name: Hello RHS
 
 Difficulty: Easy
+Points: 1
 
 Problem:
 Welcome to the first ever RHS Programming Competition! The hosts of the competition wish to welcome all participants by writing a program instead of physically interacting with them, as that would require social skills (which the hosts do not have).

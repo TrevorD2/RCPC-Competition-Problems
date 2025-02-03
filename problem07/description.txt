@@ -1,6 +1,7 @@
 Name: 404 Support Beams Not Found
 
 Difficulty: Medium
+Points: 4
 
 Problem:
 Six Flags is making a new roller coaster and wants to find out the total length of all the support beams needed.

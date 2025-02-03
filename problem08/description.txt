@@ -1,6 +1,7 @@
 Name: Illinois Jane and the Temple of Decisions
 
 Difficulty: Medium
+Points: 4
 
 Problem:
 Illinois Jane is an entrepid professor, archaeologist, and adventurer who recently stumbled upon the world renown Temple of Decisions. It has been said that many adventurers have tried and failed to secure the historical treasures that hide within.

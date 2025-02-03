@@ -1,6 +1,7 @@
 Name: Little Caesars Pizza Encryption
 
 Difficulty: Medium
+Points: 4
 
 Problem:
 The pizza company Little Caesars has been facing a crisis! It seems that the pizza deliveries are constantly being robbed before the pizza gets to the desired location.

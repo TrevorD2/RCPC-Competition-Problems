@@ -1,6 +1,7 @@
 Name: Christmas Snow
 
 Difficulty: Medium
+Points: 7
 
 Problem:
 It's Christmas time and snow is falling, but where will it fall? Given a 2d side view of a landscape represented by a string, return the same landscape after the snow has fallen.
