@@ -1,3 +1,4 @@
+#Note: works only when graph has zero cyclic wormholes
 def solution(connections: list[list[int]], treasures: list[int], actions: str, start: int) -> bool: 
     def convert_to_adj_list(edges):
         adj_list = {}
@@ -30,7 +31,6 @@ def solution(connections: list[list[int]], treasures: list[int], actions: str, s
         return stateset
 
     cur_state = frozenset(e_closure(start))
-    print(cur_state)
 
     for action in actions:
         next_state = set()
@@ -47,7 +47,6 @@ def solution(connections: list[list[int]], treasures: list[int], actions: str, s
             updated = updated.union(e_closure(state))
 
         cur_state = frozenset(updated)
-        print(cur_state)
 
     return any(state in treasures for state in cur_state)
 

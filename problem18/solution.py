@@ -47,9 +47,9 @@ def solution(transitions: list[list[int]], q_initial: int, q_final: int) -> list
             ancestor = predecessor[ancestor]
         return path
         
-    return construct_path(q_final)
+    return tuple(construct_path(q_final))
 
 from testcases import io_dict
 if __name__ == "__main__":
     for i in io_dict:
-        print(solution(*i), solution(*i)==io_dict[i])
+        print(solution(*i), tuple(solution(*i))==io_dict[i])
