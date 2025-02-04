@@ -1,4 +1,4 @@
-def solution(measurement: float, unit: str, ingrediant: str) -> str:
+def solution(measurement: float, unit: str, ingredient: str) -> str:
     weight_convert = {
         "pound" : 16,
         "ounce" : 1
@@ -24,7 +24,7 @@ def solution(measurement: float, unit: str, ingrediant: str) -> str:
         metric_unit = unit
 
 
-    return f"{round(metric_measurement*10)/10} {metric_unit} of {ingrediant}"
+    return f"{round(metric_measurement*10)/10} {metric_unit} of {ingredient}"
 
 
 from testcases import io_dict
