@@ -8,6 +8,8 @@ Six Flags is making a new roller coaster and wants to find out the total length 
 Given a graph of #’s representing the roller coaster’s track, find out how many meters of support beams need to be placed if there needs to be support beams all the way from under the track (#) to the ground (-).
 Note: the x-axis always has a scaling of 1, but the y-axis may be scaled (using an integer or float).
 
+Sample input displays an additional number above the actual coaster. This number will not be passed into the solution function. (If you have a question about this, ask).
+
 Input:
 coaster: list[string]
 

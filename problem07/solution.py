@@ -15,5 +15,4 @@ if __name__ == "__main__":
     for inpt in io_dict:
 
         inpt = inpt.split("\n")
-
         print(f"{inpt}\n{solution(inpt)}\n{solution(inpt) == io_dict[inpt]}\n")
