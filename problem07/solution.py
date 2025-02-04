@@ -1,4 +1,4 @@
-def solution(coaster: list[str]) -> float:
+def solution(coaster: list[str]) -> int:
     y = float(coaster[0].split("|")[0])
     dy = float(coaster[0].split("|")[0]) - float(coaster[1].split("|")[0])
 
@@ -7,7 +7,7 @@ def solution(coaster: list[str]) -> float:
         y -= dy
         beam_length += slice.count("#")*y
 
-    return beam_length
+    return int(beam_length)
 
 
 from testcases import io_dict

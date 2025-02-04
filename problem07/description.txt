@@ -16,7 +16,7 @@ Constraints:
 0 <= len(coaster[i]) <= 30 chars
 
 Output:
-beam_length: float
+beam_length: int
 
 Tags:
 String-Parse
