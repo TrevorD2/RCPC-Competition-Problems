@@ -5,6 +5,7 @@ Points: 12
 
 Problem:
 You will be given a series of mazes that make up each floor of the dungeon.
+You are tasked with finding the shortest possible path from start to finish of these floors.
 On the first floor, start at the position of character "S".
 The higher floors will have trapdoor(s) labeled "T" which lead to lower floors.
 Entering a trapdoor will cause you to go to the same position (index) of the floor below.
