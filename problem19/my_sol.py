@@ -1,4 +1,7 @@
 """
+Noted and (hopefully) fixed. Myb solve using shortest and confirm if u have time?
+
+
 Problem Notes:
 The problem does not specify whether it needs to be shortest path so there are multiple possible answers.
 Also, if it does need to be shortest path, there still may be multiple answers; though this scenario is unlikely, you should probably try to prove that there are no duplicates since theres only one "correct" answer.

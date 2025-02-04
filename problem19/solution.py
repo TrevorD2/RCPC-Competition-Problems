@@ -62,9 +62,8 @@ def solution(floors: str) -> str:
 
         this_iteration = next_iteration
     
-    for y, x, letter_history in this_iteration:
-        print(letter_history)
 
+    print([len(items[2]) for items in sorted(this_iteration, key = lambda x: len(x[2]))])
     return min(this_iteration, key = lambda x: len(x[2]))[2]
 
 
