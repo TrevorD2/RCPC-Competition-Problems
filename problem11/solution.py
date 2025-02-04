@@ -1,5 +1,4 @@
-def solution(funhouse_str: str, start_pos: list[int], start_direction: str) -> list[int]:
-    funhouse = funhouse_str.split("\n")
+def solution(funhouse: list[str], start_pos: list[int], start_direction: str) -> list[int]:
     x, y = start_pos
     dir_str_to_arr = {"up": [0, -1], "down" : [0, 1], "left" : [-1, 0], "right" : [1, 0]}
     dx, dy = dir_str_to_arr[start_direction]
@@ -32,5 +31,9 @@ def solution(funhouse_str: str, start_pos: list[int], start_direction: str) -> l
 from testcases import io_dict
 if __name__ == "__main__":
     for inpt in io_dict:
-        sol = solution(*inpt)
+
+        r_inpt = list(inpt)
+        r_inpt[0] = r_inpt[0].split("\n")
+        sol = solution(*r_inpt)
+        
         print(f"{inpt}{str(inpt[0])}\n{sol}\n{sol == io_dict[inpt]}\n")
