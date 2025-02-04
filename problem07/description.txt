@@ -9,10 +9,11 @@ Given a graph of #’s representing the roller coaster’s track, find out how m
 Note: the x-axis always has a scaling of 1, but the y-axis may be scaled (using an integer or float).
 
 Input:
-coaster: string
+coaster: list[string]
 
 Constraints:
-0 <= coaster <= 300 chars
+0 <= len(coaster) <= 20 chars
+0 <= len(coaster[i]) <= 30 chars
 
 Output:
 beam_length: float
