@@ -24,7 +24,7 @@ Constraints:
 0 <= floor_height <= 100
 
 Output:
-move_history: integer
+move_history: string
 
 Tags:
 String-Parse, Maze
