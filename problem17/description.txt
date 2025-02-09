@@ -15,8 +15,8 @@ Given the cipher text, you must reverse this cipher in order to DECODE to plaint
    C. Adding 31 for capital letters 
 
 3. Group each number into integer pairs. 
-   A. The first of each pair will be the height and the second will be the base of an equilateral triangle. (h, b)
-   B. Now, create new pairs using each triangle's perimeter and twice its area. (3*P, 2*A)
+   A. The first of each pair will be the height and the second will be the base of an equilateral triangle in a non-euclidian plane. (h, b)
+   B. Now, create new pairs using each triangle's non-euclidian perimeter and area according to the following equations. (3*b, h*b)
 
 4. Flatten your list of pairs into a 1d array and convert each number to hexadecimal. Include leading 0's to make it total 3 hexadecimal places.
 
